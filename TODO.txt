@@ -1,0 +1,7 @@
+08-07-2022 - Website is looking clean
+
+To Add
+    - Links to portfolio imgs
+    - Links to technology icons
+    - Animation to Technlogies Icon Grid
+    - Fix contact form
