@@ -9,6 +9,7 @@
     --tertiaryTextColor: #A9DC76;
     --codeColor: #d3d3d3;
     --elementColor: #bc0457;
+    --variableColor: #d152f7;
 }
 
 /* Document Styling */
@@ -47,6 +48,7 @@ h3 {
     color: var(--primaryTextColor);
     margin-bottom: 10px;
     text-align: center;
+    display: inline-block;
 }
 
 /* Animation Source */
@@ -54,12 +56,27 @@ h3 {
 /* Typewriter Animation */
     @keyframes typing {
         from { width:0 }
-        to { width: 60% }
+        to { width: 35% }
+    }
+
+    @keyframes typing2 {
+        from { width: 0 }
+        to { width: 30% }
+    }
+
+    @keyframes typing3 {
+        from { width: 0 }
+        to { width: 40% }
     }
 
     @keyframes blink {
         from, to { border-color: transparent }
         50% { border-color: var(--elementColor);}
+    }
+
+    @keyframes appear {
+        from { opacity: 0 }
+        to { opacity: 1 }
     }
 
 /* Fade-In Animation */
@@ -71,22 +88,34 @@ h3 {
 /* Code-Like Syntax Highlighting Styling */
     .code {
         color: var(--codeColor);
+        white-space: nowrap;
     }
 
     .element {
         color: var(--elementColor);
+        white-space: nowrap;
+
     }
 
     .class {
         color: var(--secondaryTextColor);
         font-style: italic;
+        white-space: nowrap;
+
     }
 
     .className {
-        color: var(--tertiaryTextColor)
+        color: var(--tertiaryTextColor);
+        white-space: nowrap;
     }
+
     .plaintext {
         color: var(--primaryTextColor);
+        white-space: nowrap;
+    }
+
+    .variableName {
+        color: var(--variableColor);
     }
 
 
@@ -212,13 +241,13 @@ h3 {
 .typewriterArea {
     display: inline-block;
     text-align: center;
-    border-right: .15em solid var(--elementColor);
+    border-right: .10em solid var(--elementColor);
     border-color: var(--elementColor);
     overflow: hidden;
     white-space: nowrap;
     letter-spacing: 3px;
     animation:
-        typing 2s steps(40, end),
+        typing 2s steps(30, end),
         blink 0.9s step-end infinite;
 }
 
@@ -231,20 +260,29 @@ h3 {
     margin: 0;
 }
 
+.typewriterArea2 {
+    display: inline-block;
+    text-align: center;
+    border-right: .10em solid var(--elementColor);
+    border-color: var(--elementColor);
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    animation:
+        typing2 2s steps(30, end),
+        blink 0.9s step-end infinite;
+}
+
 .projectsGalleryGrid {
-    display: flex;
     justify-content: center;
-    align-items: center;
     color: var(--primaryTextColor);
     font-family: 'Ubuntu', sans-serif;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(3, 33.3vw);
+    grid-template-columns: repeat(2, 40vw);
     opacity: 0;
-    animation-name: fadeIn;
-    animation-duration: 5s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
+    animation:
+        fadeIn 5s 3s forwards;
 }
 
 .project {
@@ -260,6 +298,19 @@ h3 {
     padding-bottom: 10px;
 }
 
+.typewriterArea3 {
+    display: inline-block;
+    text-align: center;
+    border-right: .10em solid var(--elementColor);
+    border-color: var(--elementColor);
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    animation:
+        typing3 2s steps(30, end),
+        blink 0.9s step-end infinite;
+}
+
 .technologiesIconsGrid {
     display: flex;
     justify-content: center;
@@ -268,14 +319,12 @@ h3 {
     font-family: 'Ubuntu', sans-serif;
     display: grid;
     gap: 20px;
+    opacity: 0;
     grid-template-columns: repeat(3, 20vw);
+    animation:
+        fadeIn 3s 5s forwards;
 }
 
-
-
-.fa-brands {
-    font-family: 'Righteous', cursive;
-}
 
 /* Brand Colors */
     .fa-html5 {
