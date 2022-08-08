@@ -8,24 +8,82 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/f26d369dc4.js" crossorigin="anonymous"></script>
     <title>codecologist.dev</title>
 </head>
 <body>
+
     <section class="navbar">
         <div class="socialicons">
-            <a class="phoneicon" href="tel:786-319-2776"><ion-icon name="call"></ion-icon></a></li>
-            <a class="mailicon" href="mailto: bryan@codecologist.com"><ion-icon name="mail"></ion-icon></a>
-            <a class="githubicon" href="https://github.com/codecologist"><ion-icon name="logo-github"></ion-icon></a>
-            <a class="twittericon" href="https://twitter.com/Codecologist"><ion-icon name="logo-twitter"></ion-icon></a>
-            <a class="youtubeicon" href="https://www.youtube.com/channel/UCqr3HoBvla1s9hK5CCKI_Kg"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="tel:786-319-2776"><i class="fa-solid fa-square-phone"></i></a>
+            <a href="mailto: bryan@codecologist.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/codecologist"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://twitter.com/Codecologist"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCqr3HoBvla1s9hK5CCKI_Kg"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </section>
 
     <section class="heading">
         <h1>Bryan Ramos</h1>
-        <h2>Fullstack Developer</h2>
+            <div class="typewriterArea">
+                <h2 class="code">&lt;</h2>
+                <h2 class="element">title</h2>
+                <h2 class="class">class=</h2>
+                <h2 class="className"> "profession"</h2>
+                <h2 class="code">&gt;</h2>
+                <h2 class="plaintext">Fullstack Developer</h2>
+                <h2 class="code">&lt;/</h2>
+                <h2 class="element">title</h2>
+                <h2 class="code">&gt;</h2>
+            </div>
     </section>
+
+    <section class="portfolio">
+        <h3>Portfolio</h3>
+        <div class="projectsGalleryGrid">
+            <a><img class="project project1" src="https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc=">Example 1</a>
+            <a><img class="project project2" src="https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc=">Example 2</a>
+            <a><img class="project project3" src="https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc=">Example 3</a>
+            <a><img class="project project4" src="https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc=">Example 4</a>
+            <a><img class="project project5" src="https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc=">Example 5</a>
+            <a><img class="project project6" src="https://media.istockphoto.com/vectors/thumbnail-image-vector-graphic-vector-id1147544807?k=20&m=1147544807&s=612x612&w=0&h=pBhz1dkwsCMq37Udtp9sfxbjaMl27JUapoyYpQm0anc=">Example 6</a>
+        </div>
+    </section>
+
+    <section class="technologies">
+        <h3>Technologies</h3>
+        <div class="technologiesIconsGrid">
+            <i class="fa-brands fa-html5 fa-3x"></i>
+            <i class="fa-brands fa-css3 fa-3x"></i>
+            <i class="fa-brands fa-js fa-3x"></i>
+            <i class="fa-brands fa-git-alt fa-3x"></i>
+            <i class="fa-brands fa-digital-ocean fa-3x"></i>
+            <i class="fa-brands fa-aws fa-3x"></i>
+            <i class="fa-brands fa-vuejs fa-3x"></i>
+            <i class="fa-brands fa-bitcoin fa-3x"></i>
+            <i class="fa-brands fa-ethereum fa-3x"></i>
+            <i class="fa-brands fa-rust fa-3x"></i>
+            <i class="fa-brands fa-react fa-3x"></i>
+            <i class="fa-brands fa-docker fa-3x"></i>
+            <i class="fa-brands fa-android fa-3x"></i>
+            <i class="fa-brands fa-wordpress fa-3x"></i>
+            <i class="fa-brands fa-linux fa-3x"></i>
+            <i class="fa-brands fa-node-js fa-3x"></i>
+            <i class="fa-brands fa-angular fa-3x"></i>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h3>Contact Me</h3>
+        <div class="contactForm">
+            <form id="contact" method="post" action="">
+                <input class="formField" name="name" type="text" placeholder="Your Name" required>
+                <input class="formField" name="email" type="email" placeholder="Your Email" required>
+                <textarea class="formField" name="message" placeholder="Your Message..." rows="4" required></textarea>
+                <input class="formField" type="submit" value="Send Message!">
+            </form>
+        </div>
+    </section>
+
 </body>
 </html>

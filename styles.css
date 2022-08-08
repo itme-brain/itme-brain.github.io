@@ -1,27 +1,105 @@
 :root {
-    --mainColor: lightgray;
+    --primaryBackgroundColor: #22303c;
+    --secondaryBackgroundColor: #192734;
+    --tertiaryBackgroundColor: #111c26;
+    --consoleBackgroundColor: #292929;
+    --lightconsoleBackgroundColor: #404040;
+    --primaryTextColor: #ffffff;
+    --secondaryTextColor: #FFD866;
+    --tertiaryTextColor: #A9DC76;
+    --codeColor: #d3d3d3;
+    --elementColor: #bc0457;
 }
 
-body {
+/* Document Styling */
+* {
     margin: 0;
     padding: 0;
     border: 0;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 a, a:visited, a:active {
     color: inherit;
 }
 
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Righteous', cursive;
+    margin: 30px 0 0 0;
+    color: var(--primaryTextColor);
+}
+
+h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 10px;
+    color: var(--secondaryTextColor);
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--primaryTextColor);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Animation Source */
+
+/* Typewriter Animation */
+    @keyframes typing {
+        from { width:0 }
+        to { width: 75% }
+    }
+
+    @keyframes blink {
+        from, to { border-color: transparent }
+        50% { border-color: var(--elementColor);}
+    }
+
+/* Fade-In Animation */
+    @keyframes fadeIn {
+        from { opacity: 0 }
+        to { opacity: 1 }
+    }
+
+/* Code-Like Syntax Highlighting Styling */
+    .code {
+        color: var(--codeColor);
+    }
+
+    .element {
+        color: var(--elementColor);
+    }
+
+    .class {
+        color: var(--secondaryTextColor);
+        font-style: italic;
+    }
+
+    .className {
+        color: var(--tertiaryTextColor)
+    }
+    .plaintext {
+        color: var(--primaryTextColor);
+    }
+
+
 /* Navigation Bar Styling */
 .navbar {
-    background-color: var(--mainColor);
-    position: fixed;
+    background-color: var(--lightconsoleBackgroundColor);
     width: 100%;
     border: 0;
     padding: 0;
     margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .socialicons {
@@ -33,75 +111,203 @@ a, a:visited, a:active {
     border: 0;
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
-/* Contact Icon Styling */
-    .phoneicon {
+/* Navbar Icon Styling */
+    .fa-square-phone {
         display: inline-block;
+        color: #00bb00;
         border: 0;
         padding: 0;
-        margin: 3px 3px 0 3px;
-        font-size: 20px;
+        margin: 0 10px 0 10px;
+        font-size: 25px;
     }
 
-    .mailicon {
-        display: inline-block;
-        border: 0;
-        padding: 0;
-        margin: 0 3px 0 3px;
-        font-size: 20px;
-    }
-
-    .githubicon {
-        display: inline-block;
-        color: black;
-        border: 0;
-        padding: 0;
-        margin: 0 3px 0 3px;
-    }
-
-    .twittericon {
-        display: inline-block;
-        color: lightblue;
-        border: 0;
-        padding: 0;
-        margin: 0 3px 0 3px;
-    }
-
-    .youtubeicon {
+    .fa-envelope {
         display: inline-block;
         color: white;
         border: 0;
         padding: 0;
-        margin: 0 3px 0 3px;
+        margin: 0px 10px 0 10px;
+        font-size: 25px;
+    }
+
+    .fa-square-github {
+        display: inline-block;
+        color: white;
+        border: 0;
+        padding: 0;
+        margin: 0 10px 0 10px;
+    }
+
+    .fa-twitter {
+        display: inline-block;
+        color: #1da1f2;
+        border: 0;
+        padding: 0;
+        margin: 0 10px 0 10px;
+    }
+
+    .fa-youtube {
+        display: inline-block;
+        color: #e62117;
+        border: 0;
+        padding: 0;
+        margin: 0 10px 0 10px;
     }
 
 /* Heading Styling */
 
 .heading {
-    border-bottom: 5px solid black;
+    border-bottom: 2px solid black;
     width: 100%;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
-    font-family: 'Righteous', cursive;
+    background-color: var(--primaryBackgroundColor);
     border: 0;
     padding: 0;
-    margin: 30px 0 0 0;
+    margin: 0;
 }
 
-h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    font-family: 'Righteous', cursive;
-    border: 0;
-    padding: 0;
-    margin: 10px 0 0 0;
+.typewriterArea {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    border-right: .15em solid var(--elementColor);
+    border-color: var(--elementColor);
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    animation-delay: 1s;
+    animation:
+        typing 3s steps(46, end),
+        blink 0.9s step-end infinite;
 }
-
 
 /* Portfolio Section Styling */
+
+.portfolio {
+    background-color: var(--secondaryBackgroundColor);
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.projectsGalleryGrid {
+    color: var(--primaryTextColor);
+    font-family: 'Ubuntu', sans-serif;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 33.3vw);
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.project {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+/* Technologies Section Styling */
+.technologies {
+    background-color: var(--tertiaryBackgroundColor);
+}
+
+.technologiesIconsGrid {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(5, 5vw);
+}
+
+/* Brand Colors */
+    .fa-html5 {
+        color: #f06529;
+    }
+
+    .fa-css3 {
+        color: #2965f1;
+    }
+
+    .fa-aws {
+        color: #FF9900;
+    }
+
+    .fa-git-alt {
+        color: #f1502f;
+    }
+
+    .fa-js {
+        color: #F0DB4F;
+    }
+
+    .fa-android {
+        color: #a4c639;
+    }
+
+    .fa-digital-ocean {
+        color: #123cff;
+    }
+
+    .fa-vuejs {
+        color: #42b883;
+    }
+
+    .fa-bitcoin {
+        color: #f2a900;
+    }
+
+    .fa-ethereum {
+        color: #3c3c3d;
+    }
+
+    .fa-rust {
+        color: #b7410e;
+    }
+
+    .fa-linux {
+        color: #ffffff;
+    }
+
+    .fa-react {
+        color: #61DBFB;
+    }
+
+    .fa-docker {
+        color: #0db7ed;
+    }
+
+    .fa-wordpress {
+        color: #21759b;
+    }
+
+    .fa-node-js {
+        color: #215732;
+    }
+
+    .fa-angular {
+        color: #dd1b16;
+    }
+
+/* Contact Section Styling */
+
+.contact {
+    background-color: var(--lightconsoleBackgroundColor);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+
+.contactForm {
+    background-color: var(--consoleBackgroundColor);
+    width: 60vw;
+    height: 400px;
+    border-radius: 5%;
+    display: grid;
+    place-content: center;
+    align-items: center;
+}
