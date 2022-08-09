@@ -5,3 +5,6 @@ To Add
     - Links to technology icons
     - Animation to Technlogies Icon Grid
     - Fix contact form
+
+
+Change contactForm area to Tip Area ?

@@ -234,7 +234,7 @@ h3 {
     width: 100%;
     background-color: var(--primaryBackgroundColor);
     border: 0;
-    padding: 0 0 40px 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -256,7 +256,7 @@ h3 {
 .portfolio {
     background-color: var(--secondaryBackgroundColor);
     border: 0;
-    padding: 0;
+    padding: 20px 0 20px 0;
     margin: 0;
 }
 
@@ -295,7 +295,9 @@ h3 {
 /* Technologies Section Styling */
 .technologies {
     background-color: var(--tertiaryBackgroundColor);
-    padding-bottom: 10px;
+    border: 0;
+    padding: 20px 0 20px 0;
+    margin: 0;
 }
 
 .typewriterArea3 {
@@ -320,7 +322,7 @@ h3 {
     display: grid;
     gap: 20px;
     opacity: 0;
-    grid-template-columns: repeat(3, 20vw);
+    grid-template-columns: repeat(4, 10vw);
     animation:
         fadeIn 3s 5s forwards;
 }
@@ -372,7 +374,7 @@ h3 {
     }
 
     .fa-linux {
-        color: #ffffff;
+        color: #d3d3d3;
     }
 
     .fa-react {
@@ -388,7 +390,7 @@ h3 {
     }
 
     .fa-node-js {
-        color: #215732;
+        color: #6cc24a;
     }
 
     .fa-angular {
@@ -399,6 +401,17 @@ h3 {
         color: #8a2be2;
     }
 
+    .fa-apple {
+        color: #ffffff;
+    }
+
+    .fa-cloud-arrow-up {
+        color: #add8e6;
+    }
+
+    .fa-python {
+        color: #FFE873;
+    }
 /* Contact Section Styling */
 
 .contact {
