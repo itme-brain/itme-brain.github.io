@@ -52,41 +52,8 @@ h3 {
     display: inline-block;
 }
 
-/* Animation Source */
-
-/* Typewriter Animation */
-    @keyframes typing {
-        from { width:0 }
-        to { width: 35% }
-    }
-
-    @keyframes typing2 {
-        from { width: 0 }
-        to { width: 30% }
-    }
-
-    @keyframes typing3 {
-        from { width: 0 }
-        to { width: 40% }
-    }
-
-    @keyframes blink {
-        from, to { border-color: transparent }
-        50% { border-color: var(--elementColor);}
-    }
-
-    @keyframes appear {
-        from { opacity: 0 }
-        to { opacity: 1 }
-    }
-
-/* Fade-In Animation */
-    @keyframes fadeIn {
-        from { opacity: 0 }
-        to { opacity: 1 }
-    }
-
 /* Code-Like Syntax Highlighting Styling */
+
     .code {
         color: var(--codeColor);
         white-space: nowrap;
@@ -121,6 +88,7 @@ h3 {
 
 
 /* Navigation Bar Styling */
+
 .navbar {
     background-color: var(--consoleBackgroundColor);
     width: 100%;
@@ -143,23 +111,11 @@ h3 {
     margin: 0;
 }
 
-/* Navbar Icon Styling */
-    .fa-square-phone {
-        display: inline-block;
-        color: #00bb00;
-        border: 0;
-        padding: 0;
-        margin: 0 10px 0 10px;
-        font-size: 25px;
-    }
-
-        .fa-square-phone:hover {
-            color: lightgreen;
-        }
+/* Navigation Bar Icon Styling */
 
     .fa-square-envelope {
         display: inline-block;
-        color: #d3d3d3;
+        color: #00bb00;
         border: 0;
         padding: 0;
         margin: 0px 10px 0 10px;
@@ -167,7 +123,7 @@ h3 {
     }
 
         .fa-square-envelope:hover {
-            color: #ffffff;
+            color: lightgreen;
         }
 
     .fa-github {
@@ -205,28 +161,18 @@ h3 {
         .fa-youtube:hover {
             color: lightcoral;
         }
-/* Resume Button Styling */
 
-    .resumeDownload {
-        position: absolute;
-        right: 20px;
-        top: 5px;
-        bottom: 10px;
-        height: 25px;
-        width: 110px;
-        color: var(--primaryTextColor);
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 15px;
-        letter-spacing: 2px;
-        white-space: nowrap;
-        border-radius: 5%;
-        background-color: var(--primaryBackgroundColor);
+    .fa-key {
+        display: inline-block;
+        color: #e5f503;
+        border: 0;
+        padding: 0;
+        margin: 0 10px 0 10px;
     }
 
-    .resumeDownload:hover {
-        cursor: pointer;
-        background-color: #333f4a;
-    }
+        .fa-key:hover {
+            color: lightyellow;
+        }
 
 /* Heading Styling */
 
@@ -239,19 +185,6 @@ h3 {
     margin: 0;
 }
 
-.typewriterArea {
-    display: inline-block;
-    text-align: center;
-    border-right: .10em solid var(--elementColor);
-    border-color: var(--elementColor);
-    overflow: hidden;
-    white-space: nowrap;
-    letter-spacing: 3px;
-    animation:
-        typing 2s steps(30, end),
-        blink 0.9s step-end infinite;
-}
-
 /* Portfolio Section Styling */
 
 .portfolio {
@@ -259,19 +192,6 @@ h3 {
     border: 0;
     padding: 20px 0 20px 0;
     margin: 0;
-}
-
-.typewriterArea2 {
-    display: inline-block;
-    text-align: center;
-    border-right: .10em solid var(--elementColor);
-    border-color: var(--elementColor);
-    overflow: hidden;
-    white-space: nowrap;
-    letter-spacing: 3px;
-    animation:
-        typing2 2s steps(30, end),
-        blink 0.9s step-end infinite;
 }
 
 .projectsGalleryGrid {
@@ -301,31 +221,14 @@ h3 {
     margin: 0;
 }
 
-.typewriterArea3 {
-    display: inline-block;
-    text-align: center;
-    border-right: .10em solid var(--elementColor);
-    border-color: var(--elementColor);
-    overflow: hidden;
-    white-space: nowrap;
-    letter-spacing: 3px;
-    animation:
-        typing3 2s steps(30, end),
-        blink 0.9s step-end infinite;
-}
 
 .technologiesIconsGrid {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--primaryTextColor);
-    font-family: 'Ubuntu', sans-serif;
     display: grid;
     gap: 20px;
-    opacity: 0;
     grid-template-columns: repeat(4, 10vw);
-    animation:
-        fadeIn 3s 5s forwards;
 }
 
 
