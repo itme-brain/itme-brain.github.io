@@ -1,1 +1,1 @@
-# codecologist.github.io
+# codecologist.dev
