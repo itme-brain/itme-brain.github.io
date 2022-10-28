@@ -1,0 +1,40 @@
+html {
+    display: inline-block;
+    margin: auto;
+}
+
+body {
+  padding: 10px 10px;
+  margin: 20px auto;
+  font-size: 1.0rem;
+  max-width: 800px;
+  font-family: sans-serif;
+}
+
+h1 {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 95%;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    border: 0;
+    margin: 0;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tipjar {
+    width: 15em;
+    height: 15em;
+}
