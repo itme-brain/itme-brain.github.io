@@ -71,4 +71,5 @@ a:hover {
     width: 81%;
     background-color: #222831;
     border-radius: 15px;
+    word-wrap: break-word;
 }
