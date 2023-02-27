@@ -67,9 +67,8 @@ a:hover {
 
 .gpg {
     display: inline-block;
-    border: none;
-    width: 81%;
     background-color: #222831;
     border-radius: 15px;
+    max-width: 100%;
     word-wrap: break-word;
 }
