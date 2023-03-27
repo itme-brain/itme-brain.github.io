@@ -1,3 +1,3 @@
-# bryram.github.io
+# ramos.codes
 
-Personal Website, contributions & feedback are welcome.
+Personal Website 
