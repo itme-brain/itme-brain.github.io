@@ -41,7 +41,10 @@ li {
     margin: 0;
     padding-right: 15px;
 }
-
+.nostrich {
+  width: 25px;
+  height: 25px;
+}
 a, a:active {
   color: inherit;
   text-decoration: none;
