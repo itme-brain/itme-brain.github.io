@@ -80,8 +80,8 @@ a:hover {
 }
 
 .nostrich {
-  margin-left: auto;
-  margin-right: auto;
+  width: 24px;
+  height: 24px;
   background-image: url('assets/nostrich.png');
   background-size: cover;
 }
