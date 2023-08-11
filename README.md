@@ -1,3 +1,0 @@
-# ramos.codes
-
-Personal Website 
