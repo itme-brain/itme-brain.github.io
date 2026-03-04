@@ -1,0 +1,34 @@
+<header>
+  {% unless page.url == '/' %}
+  <a href="{{ '/' | relative_url }}" class="home-btn" aria-label="Home" title="Home">
+    <i class="fa-solid fa-house"></i>
+  </a>
+  {% endunless %}
+
+  <button
+    class="theme-toggle"
+    onclick="(function(){
+      var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      document.documentElement.classList.add('theme-transitions-enabled');
+    })()"
+    aria-label="Toggle color theme"
+    title="Toggle color theme"
+  >
+    <i class="fa-solid fa-moon icon-moon"></i>
+    <i class="fa-solid fa-sun icon-sun"></i>
+  </button>
+
+  <img src="{{ '/assets/pfp.gif' | relative_url }}" alt="Bryan Ramos" class="pfp">
+  <h1>Bryan Ramos</h1>
+  <p class="header-tagline">Developer &amp; Technologist</p>
+
+  <ul>
+    <li><a href="mailto:bryan@ramos.codes" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+    <li><a href="https://github.com/itme-brain" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+    <li><a href="{{ '/pgpkey' | relative_url }}" aria-label="PGP Key"><i class="fa-sharp fa-solid fa-key"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/bryan-ramos-ab467228a/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+    <li><a href="{{ '/blog' | relative_url }}" aria-label="Blog"><i class="fa-solid fa-blog"></i></a></li>
+  </ul>
+</header>
