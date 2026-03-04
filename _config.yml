@@ -1,1 +1,11 @@
-include: [".well-known"]
+title: Bryan Ramos
+description: Developer / Technologist
+url: "https://ramos.codes"
+
+include:
+  - ".well-known"
+
+permalink: /blog/:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge

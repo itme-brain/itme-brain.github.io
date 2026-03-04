@@ -1,0 +1,18 @@
+---
+layout: base
+---
+<div class="blog-list">
+  {% if site.posts.size == 0 %}
+    <p style="color: var(--color-text-secondary);">No posts yet.</p>
+  {% else %}
+    {% for post in site.posts %}
+    <div class="post-preview">
+      <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% if post.description %}
+      <p class="post-description">{{ post.description }}</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  {% endif %}
+</div>
