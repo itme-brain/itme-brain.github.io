@@ -14,9 +14,6 @@ When Twitter dies, or transforms into something unrecognizable, everyone who bui
 
 This is not a new observation. It's been said every time a major platform has pivoted, died, or changed its terms. MySpace, Tumblr, Vine, Google+. We watched it happen and we kept building on closed platforms anyway because that's where the people were.
 
-<!-- Replace with a screenshot of the old Twitter bird logo next to the X logo, or a terminal showing a curl to api.twitter.com returning 403 after API lockdowns -->
-![The Twitter to X transition](/assets/img/twitter-x-rebrand.png)
-
 ## What Actually Changed This Year
 
 The rebrand is cosmetic. What's more significant is the systematic destruction of the API ecosystem. Third-party clients are gone. The API costs that killed them were not a mistake or a miscalculation. They were a policy decision to force everyone through official clients that can be monetized and monitored.

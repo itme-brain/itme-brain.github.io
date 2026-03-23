@@ -14,9 +14,6 @@ Nostr stands for "Notes and Other Stuff Transmitted by Relays." The name is inte
 
 There's no company, no central server, no account to create. Your identity is your key. Your posts are signed by that key. Relays can choose what to store and what to drop, but they can't forge your signature or impersonate you.
 
-<!-- Replace with a screenshot of your Nostr profile or a client like Damus/Iris showing your npub -->
-![Nostr client showing a profile feed](/assets/img/nostr-client.png)
-
 ## Why This Feels Different
 
 I've been on Twitter since around 2010. I've watched it go through multiple cycles of policy changes, API lockdowns, and relationship rewrites between the company and its users. The pattern is always the same: the platform grows, the platform becomes valuable, the platform starts extracting value from users and developers who helped make it valuable.
