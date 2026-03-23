@@ -18,9 +18,6 @@ What I didn't anticipate was how thoroughly that initial demographic would come 
 
 The "no censorship" promise turned out to mean something narrower: no censorship of the specific things the dominant community wanted to say. Everything else found itself slowly squeezed out not by policy but by indifference and social pressure.
 
-<!-- Replace with a screenshot of a Nostr client feed showing the repetitive content/echo chamber, or your own unfollowed npub profile page -->
-![A Nostr client feed in late 2025](/assets/img/nostr-feed-2025.png)
-
 ## The Usenet Problem
 
 I've been thinking about how closely this maps to Usenet's decline. Usenet was technically elegant, decentralized before decentralization was a word people used, and destroyed by two things: spam and the collapse of signal-to-noise ratio. Not in that order.
@@ -51,4 +48,4 @@ I still believe in the principle. Cryptographic identity, open protocols, no sin
 
 But building on a protocol that has become an echo chamber isn't advancing those goals, it's just participating in a different kind of monoculture. I'll keep watching what happens with the underlying protocol work. If the community composition changes or the discovery problems get solved in a real way, I'll look again.
 
-For now: the link is gone, the account still exists, and I'm still reachable at `bryan@ramos.codes`.
+For now: the link is gone, the account still exists, and I'm still reachable at `bryan@ramos.codes`

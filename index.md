@@ -1,15 +1,13 @@
 ---
 layout: page
-title: Developer / Technologist
+title: Software & Systems Engineer
 ---
 
 <section class="section-bio" markdown="1">
 
-I work at the intersection of systems programming, real-time computing, and open-source infrastructure. My background spans Linux systems, simulation engineering and low-level development in C and Python with a growing focus on applied AI and LLM integration. I have a strong preference for auditable, modular stacks and tools that empower user autonomy.
+I work with systems programming, real-time computing, and simulation engineering. My background spans Linux, low-level development in C and Python, and debugging latency-critical systems where determinism and microseconds count. Currently exploring applied AI and LLM integration.
 
-Reach me by [email](mailto:bryan@ramos.codes) or find me on the platforms above.
-
-Please encrypt sensitive messages using my [PGP key](/pgpkey).
+Reach me at [bryan@ramos.codes](mailto:bryan@ramos.codes)
 
 </section>
 
@@ -22,12 +20,13 @@ Please encrypt sensitive messages using my [PGP key](/pgpkey).
   <span class="skill-tag">Linux</span>
   <span class="skill-tag">Real-Time Systems</span>
   <span class="skill-tag">Simulation Engineering</span>
-  <span class="skill-tag">AI / LLM Integration</span>
-  <span class="skill-tag">Bitcoin &amp; Lightning</span>
-  <span class="skill-tag">Nostr Protocol</span>
-  <span class="skill-tag">PGP/GPG</span>
-  <span class="skill-tag">Tor</span>
-  <span class="skill-tag">Self-Hosting</span>
+  <span class="skill-tag">AI/LLM Integration</span>
+  <span class="skill-tag">Automation</span>
+  <span class="skill-tag">Networking</span>
+  <span class="skill-tag">Docker</span>
+  <span class="skill-tag">KVM/QEMU</span>
+  <span class="skill-tag">Nix</span>
+  <span class="skill-tag">SQL</span>
 </div>
 </section>
 

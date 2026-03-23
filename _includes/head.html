@@ -2,6 +2,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.description }}{% endif %}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="author" content="{{ site.title }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta name="theme-color" content="#171e26">
+
+<!-- Open Graph / LinkedIn / Facebook -->
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{{ '/assets/headshot.jpeg' | absolute_url }}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:image" content="{{ '/assets/headshot.jpeg' | absolute_url }}">
+
 <!-- Theme script: runs before CSS to prevent flash of wrong theme -->
 <script>
   (function() {

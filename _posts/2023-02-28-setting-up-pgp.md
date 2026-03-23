@@ -18,9 +18,6 @@ When someone wants to send you an encrypted message, they use your public key to
 
 It also works in reverse for signatures. You can sign something with your private key and anyone with your public key can verify the signature came from you. This is useful for verifying software downloads, signing git commits, or just proving a message wasn't tampered with.
 
-<!-- Replace with a terminal screenshot showing gpg --gen-key output or your key fingerprint -->
-![GPG key generation in a terminal](/assets/img/pgp-keygen.png)
-
 ## Why It Feels Abandoned (And Why That's Wrong)
 
 The honest reason most people haven't set up PGP is that the tooling is rough and the UX has barely changed since the 90s. Keyservers are a mess, key discovery is unreliable, and the average person isn't going to paste an ASCII armor block into a web form to send their friend a message.
@@ -33,7 +30,7 @@ The other thing PGP gives you that Signal doesn't is longevity and portability. 
 
 ## Getting Started
 
-The quickest path on Linux is through GnuPG:
+The quickest path on Linux is through GPG:
 
 ```bash
 gpg --full-generate-key
@@ -49,7 +46,8 @@ gpg --armor --export your@email.com
 
 Paste that block on your website, upload it to keys.openpgp.org, or just email it to people. Once someone has your public key, they can encrypt messages that only you can read.
 
-I've posted mine on the [PGP key](/pgpkey) page here. If you're sending me anything sensitive, please use it.
+I've posted mine here: [PGP key](/assets/public.key)  
+If you're sending me anything sensitive, please use it.
 
 ## One More Thing
 

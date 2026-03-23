@@ -20,9 +20,6 @@ The problem is that achieving fairness and throughput sometimes requires the ker
 
 For a web server, a latency spike of 5ms is noise. For a control system running a simulation where a missed deadline means corrupted state, it's a failure.
 
-<!-- Replace with a screenshot of NightTune showing CPU latency graphs or cyclictest output -->
-![Latency measurement output from a real-time Linux system](/assets/img/rt-latency-cyclictest.png)
-
 ## What PREEMPT_RT Changes
 
 The PREEMPT_RT patch set, which has been in development since 2005 and was finally merged into the mainline kernel with v6.12 in late 2024, addresses this by making the kernel itself fully preemptible. The key changes:
