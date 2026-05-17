@@ -5,7 +5,7 @@ title: Linux Systems & Automation Engineer
 
 <section class="section-bio" markdown="1">
 
-I work on Linux systems, real-time computing, infrastructure automation, and applied AI tooling. My work spans low-level diagnostics, C and Python development, reproducible infrastructure, and debugging latency-sensitive critical systems.
+I work on Linux systems, real-time computing, infrastructure automation, and applied AI tooling. My work spans low-level diagnostics, C and Python development, reproducible infrastructure, and debugging latency-sensitive systems where correctness and determinism matter.
 
 Lately I have been focused on minimizing vendor dependencies for developer infrastructure and automation via AI.
 
