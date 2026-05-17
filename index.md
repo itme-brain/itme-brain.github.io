@@ -7,7 +7,7 @@ title: Linux Systems & Automation Engineer
 
 I work on Linux systems, real-time computing, infrastructure automation, and applied AI tooling. My work spans low-level diagnostics, C and Python development, reproducible infrastructure, and debugging latency-sensitive systems where correctness and determinism matter.
 
-Lately I have been focused on minimizing vendor dependencies for developer infrastructure and automation via AI.
+Lately I have been focused on minimizing vendor dependencies for developer infrastructure and automation via RAG AI pipelines.
 
 Reach me at [bryan@ramos.codes](mailto:bryan@ramos.codes)
 
@@ -20,9 +20,10 @@ Reach me at [bryan@ramos.codes](mailto:bryan@ramos.codes)
   <span class="skill-tag">Real-Time Linux</span>
   <span class="skill-tag">Systems Diagnostics</span>
   <span class="skill-tag">Automation</span>
+  <span class="skill-tag">APIs</span>
   <span class="skill-tag">Nix</span>
   <span class="skill-tag">Python</span>
-  <span class="skill-tag">C</span>
+  <span class="skill-tag">C/C++</span>
   <span class="skill-tag">Bash</span>
   <span class="skill-tag">Docker</span>
   <span class="skill-tag">SQL</span>
