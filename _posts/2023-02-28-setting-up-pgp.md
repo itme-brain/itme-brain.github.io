@@ -46,7 +46,7 @@ gpg --armor --export your@email.com
 
 Paste that block on your website, upload it to keys.openpgp.org, or just email it to people. Once someone has your public key, they can encrypt messages that only you can read.
 
-I've posted mine here: [PGP key](/assets/public.key)  
+I've posted mine here: [PGP key](/assets/public.asc)  
 If you're sending me anything sensitive, please use it.
 
 ## One More Thing
