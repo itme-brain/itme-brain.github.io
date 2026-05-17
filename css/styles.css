@@ -569,6 +569,12 @@ footer a {
   color: var(--color-text-muted);
 }
 
+.footer-links-left {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
 footer a:hover {
   color: var(--color-accent);
 }
