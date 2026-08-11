@@ -7,7 +7,7 @@
 <meta name="author" content="{{ site.title }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
-<meta name="theme-color" content="#171e26">
+<meta name="theme-color" content="#11130f">
 
 <!-- Open Graph / LinkedIn / Facebook -->
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
@@ -15,13 +15,13 @@
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta property="og:image" content="{{ '/assets/headshot.jpeg' | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/avatar.jpg' | absolute_url }}">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="{{ '/assets/headshot.jpeg' | absolute_url }}">
+<meta name="twitter:image" content="{{ '/assets/avatar.jpg' | absolute_url }}">
 
 <!-- Theme script: runs before CSS to prevent flash of wrong theme -->
 <script>
@@ -32,10 +32,4 @@
   })();
 </script>
 
-<!-- Google Fonts: Inter -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
-
 <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
-<script src="https://kit.fontawesome.com/f26d369dc4.js" crossorigin="anonymous"></script>

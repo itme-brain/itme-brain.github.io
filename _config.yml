@@ -1,5 +1,5 @@
 title: Bryan Ramos
-description: Linux Systems & Automation Engineer
+description: Open source systems engineer working with Linux, Nix, automation, and local AI
 url: "https://ramos.codes"
 
 include:
@@ -9,3 +9,8 @@ permalink: /blog/:year/:month/:day/:title/
 
 markdown: kramdown
 highlighter: rouge
+
+exclude:
+  - flake.nix
+  - flake.lock
+  - justfile

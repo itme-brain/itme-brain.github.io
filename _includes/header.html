@@ -1,33 +1,25 @@
-<header>
+<header class="site-header">
   {% unless page.url == '/' %}
-  <a href="{{ '/' | relative_url }}" class="home-btn" aria-label="Home" title="Home">
-    <i class="fa-solid fa-house"></i>
-  </a>
+  <a class="site-identity" href="{{ '/' | relative_url }}">home</a>
   {% endunless %}
 
-  <button
-    class="theme-toggle"
-    onclick="(function(){
-      var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-      document.documentElement.classList.add('theme-transitions-enabled');
-    })()"
-    aria-label="Toggle color theme"
-    title="Toggle color theme"
-  >
-    <i class="fa-solid fa-moon icon-moon"></i>
-    <i class="fa-solid fa-sun icon-sun"></i>
-  </button>
-
-  <img src="{{ '/assets/headshot.jpeg' | relative_url }}" alt="Bryan Ramos" class="pfp">
-  <h1>Bryan Ramos</h1>
-  <p class="header-tagline">Linux Systems &amp; Automation Engineer</p>
-
-  <ul class="nav-links">
-    <li><a href="mailto:bryan@ramos.codes"><i class="fa-solid fa-envelope"></i><span>Email</span></a></li>
-    <li><a href="https://github.com/itme-brain"><i class="fa-brands fa-github"></i><span>GitHub</span></a></li>
-    <li><a href="https://www.linkedin.com/in/bryan-ramos-ab467228a/"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a></li>
-    <li><a href="{{ '/blog' | relative_url }}"><i class="fa-solid fa-pen-nib"></i><span>Blog</span></a></li>
-  </ul>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="https://github.com/itme-brain">work</a>
+    <a href="{{ '/blog' | relative_url }}">writing</a>
+    <a href="mailto:bryan@ramos.codes">contact</a>
+    <button
+      class="theme-toggle"
+      onclick="(function(){
+        var next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        document.documentElement.classList.add('theme-transitions-enabled');
+      })()"
+      aria-label="Toggle color theme"
+      title="Toggle color theme"
+    >
+      <span class="icon-moon" aria-hidden="true">◐</span>
+      <span class="icon-sun" aria-hidden="true">○</span>
+    </button>
+  </nav>
 </header>
